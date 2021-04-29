@@ -13,6 +13,8 @@ runs:
       shell: bash
     - run : npm run build
       shell: bash
+    - run : cp CNAME dist/prod
+      shell: bash
     - run : git config user.name github-actions
       shell: bash
     - run : git config user.email github-actions@github.com
