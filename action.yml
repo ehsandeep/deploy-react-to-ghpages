@@ -7,9 +7,9 @@ branding:
 runs: 
   using: 'composite'
   steps: 
-    - run : yarn install
+    - run : "CI=false yarn install"
       shell: bash
-    - run : yarn build
+    - run : "CI=false yarn build"
       shell: bash
     - run : cp CNAME build
       shell: bash
