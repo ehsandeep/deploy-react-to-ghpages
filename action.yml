@@ -11,8 +11,6 @@ runs:
       shell: bash
     - run : "CI=false yarn build"
       shell: bash
-    - run : "git config --unset core.bare"
-      shell: bash
     - run : cp CNAME build
       shell: bash
     - run : git config user.name github-actions
